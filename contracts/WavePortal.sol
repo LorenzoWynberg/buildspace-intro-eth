@@ -5,9 +5,9 @@ pragma solidity ^0.8.0;
 import "hardhat/console.sol";
 
 contract WavePortal {
-    uint256 totalWaves;
-    uint256 totalWavers;
-    address[] waversAddress;
+    uint256 private totalWaves;
+    uint256 private totalWavers;
+    address[] private waversAddress;
     mapping(address => uint256) public wavers;
 
     constructor() {
